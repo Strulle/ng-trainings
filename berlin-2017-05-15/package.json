@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "start-universal": "ng build --prod && ngc && ts-node src/server.ts",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -22,12 +23,15 @@
     "@angular/router": "^4.0.0",
     "clarity-ui": "^0.9.4-patch",
     "core-js": "^2.4.1",
+    "express": "^4.15.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@angular/animations": "^4.1.2",
     "@angular/cli": "1.0.3",
     "@angular/compiler-cli": "^4.0.0",
+    "@angular/platform-server": "^4.1.2",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
@@ -39,6 +43,7 @@
     "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-ts": "^2.1.2",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",

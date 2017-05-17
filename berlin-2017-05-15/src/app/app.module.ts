@@ -14,7 +14,7 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
     TopNavigationComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'ng-training'}),
     FormsModule,
     HttpModule,
 
