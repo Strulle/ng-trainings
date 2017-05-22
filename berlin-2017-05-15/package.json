@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build-electron": "ng build --base-href . && copy src\\electron\\* dist",
+    "electron": "npm run build-electron && electron dist/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
